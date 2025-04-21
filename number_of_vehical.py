@@ -14,6 +14,7 @@ def vehical_no(image_path):
     # Check if any text was detected at all
     if not results:
         print("No text detected in the image.")
+        return -1
     else:
         # Regular expression to match license plate format for partial segments
         plate_segment_pattern = r"[A-Z0-9\s]+"
